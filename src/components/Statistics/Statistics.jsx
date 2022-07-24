@@ -49,11 +49,12 @@ const List = styled.ul`
 `;
 const Section = styled.section`
   margin-top: 50px;
-  background-color: white;
+  background-color: #99cde6;
   width: 516px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-shadow: 1px 4px 11px 3px rgba(0,0,0,0.66);
 `;
 const Label = styled.span`
   margin-bottom: 5px;
