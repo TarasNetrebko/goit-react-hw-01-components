@@ -5,7 +5,7 @@ import { randomColor } from 'utils';
 export const Statistics = ({ title, stats }) => {
   return (
     <Section className="statistics">
-      {title && <h2 className="title">{title.toUpperCase()}</h2>}
+      {title && <h2>{title.toUpperCase()}</h2>}
       <List>
         {stats.map(({ id, label, percentage }) => {
           return (
