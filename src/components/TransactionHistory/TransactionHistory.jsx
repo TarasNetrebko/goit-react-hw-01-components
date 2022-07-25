@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 export const TransactionHistory = ({ transactions }) => {
   return (
-    <Table class="transaction-history">
+    <Table>
       <THead>
         <Tr>
           <Th>Type</Th>
