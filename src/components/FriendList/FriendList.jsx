@@ -1,14 +1,13 @@
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
 import { FriendListItem } from './FriendListItem/FriendListItem';
+import { Section, List } from "./FriendList.styled"
 
 export const FriendList = ({friends}) => {
   return (
     <Section>
     <List>
         {friends.map(({ avatar, name, isOnline, id }) =>
-          <FriendListItem key={id} avatar={avatar} name={name} isOnline={isOnline}>            
-          </FriendListItem>
+          <FriendListItem key={id} avatar={avatar} name={name} isOnline={isOnline}/>
       )}
       </List>
       </Section>
@@ -25,18 +24,3 @@ FriendList.propTypes = {
     })
   )
 }
-const Section = styled.section`
-  margin-top: 50px;
-  width: 516px;
-  display: flex;
-  justify-content: center;
-`
-const List = styled.ul`
-  width: 153px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-`
